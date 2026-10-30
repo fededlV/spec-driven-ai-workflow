@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run shellcheck
+        run: |
+          sudo apt-get update && sudo apt-get install -y shellcheck
+          shellcheck bin/ai-workflow install.sh tests/test_cli.sh
+
+      - name: Run CLI test suite
+        run: |
+          chmod +x bin/ai-workflow install.sh tests/test_cli.sh
+          ./tests/test_cli.sh

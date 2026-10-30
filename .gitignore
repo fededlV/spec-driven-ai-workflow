@@ -1,0 +1,23 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Environment & Secrets
+.env*
+*.key
+*.pem
+
+# Editor Directories
+.idea/
+.vscode/
+
+# AI Workflow local runtime artifacts & memory
+.engram/
+.atl/
+*.log
+
+# Scratch and test sandboxes
+/tmp/
+scratch/
