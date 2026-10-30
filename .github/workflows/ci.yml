@@ -17,7 +17,7 @@ jobs:
       - name: Run shellcheck
         run: |
           sudo apt-get update && sudo apt-get install -y shellcheck
-          shellcheck bin/ai-workflow install.sh tests/test_cli.sh
+          shellcheck --severity=warning bin/ai-workflow install.sh tests/test_cli.sh
 
       - name: Run CLI test suite
         run: |

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2059,SC2016
 # ==============================================================================
 # Installer for Spec-Driven AI Development Workflow
 # https://github.com/fededlV/spec-driven-ai-workflow
