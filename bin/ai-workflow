@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # ai-workflow — CLI Manager for Spec-Driven AI Development Workflows
-# https://github.com/your-username/spec-driven-ai-workflow
+# https://github.com/fededlV/spec-driven-ai-workflow
 # ==============================================================================
 # Enforces strict separation of concerns between Specification and Build agents,
 # manages specification lifecycles, and automates multi-agent project onboarding.

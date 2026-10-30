@@ -1,7 +1,7 @@
 # Spec-Driven AI Development Workflow
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/your-username/spec-driven-ai-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/spec-driven-ai-workflow/actions)
+[![CI](https://github.com/fededlV/spec-driven-ai-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/fededlV/spec-driven-ai-workflow/actions)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey.svg)]()
 [![Methodology](https://img.shields.io/badge/Methodology-Spec--First%20%2B%20TDD-brightgreen.svg)]()
 
@@ -92,7 +92,7 @@ flowchart TD
 Clone the repository and run the installer:
 
 ```bash
-git clone https://github.com/your-username/spec-driven-ai-workflow.git
+git clone https://github.com/fededlV/spec-driven-ai-workflow.git
 cd spec-driven-ai-workflow
 ./install.sh
 ```
@@ -194,7 +194,7 @@ The framework is built on open standards (`AGENTS.md`, Markdown specs, Conventio
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!  
-Feel free to check [issues page](https://github.com/your-username/spec-driven-ai-workflow/issues).
+Feel free to check the [issues page](https://github.com/fededlV/spec-driven-ai-workflow/issues).
 
 ---
 

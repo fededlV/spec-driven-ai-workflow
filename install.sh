@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # Installer for Spec-Driven AI Development Workflow
-# https://github.com/your-username/spec-driven-ai-workflow
+# https://github.com/fededlV/spec-driven-ai-workflow
 # ==============================================================================
 
 set -euo pipefail
