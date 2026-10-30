@@ -8,17 +8,29 @@ This document describes the state machine governing handoffs between the **Speci
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Draft: ai-workflow new-spec
-    Draft --> Interviewing: Specification Agent activated
-    Interviewing --> Draft: Behavioral spec & tasks authored
-    Draft --> Approved: Human reviews and signs off
-    Draft --> Draft: Human requests changes
-    
-    Approved --> Grounding: Build Agent activated
-    Grounding --> SpecChallenged: Spec-Challenge Notes emitted
-    SpecChallenged --> Building: TDD Red -> Green -> Refactor
-    Building --> Verified: Slices committed & verified
-    Verified --> [*]: Changes merged to main
+  [*] --> SpecificationPhase: ai-workflow new-spec
+
+  state "Specification Phase" as SpecificationPhase {
+[*] --> Draft
+Draft --> Interviewing: Spec Agent activated
+Interviewing --> Draft: Spec & tasks authored
+
+Draft --> InReview: Submit for review
+InReview --> Draft: Requests changes
+InReview --> Approved: Sign-off
+}
+
+SpecificationPhase --> BuildPhase: Build Agent activated
+
+state "Build Phase" as BuildPhase {
+[*] --> Grounding
+Grounding --> SpecChallenged: Spec-Challenge Notes emitted
+SpecChallenged --> Building: TDD (Red → Green → Refactor)
+Building --> Verified: Slices committed & verified
+Verified --> [*]
+    }
+
+BuildPhase --> [*]: Merge to main
 ```
 
 ---
